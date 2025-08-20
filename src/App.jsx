@@ -6,12 +6,7 @@ function App() {
   const dataEntries = data.map((entry) => (
     <Entry 
       key={entry.id}
-      img={entry.img}
-      title={entry.title}
-      country={entry.country}
-      googleMapLink={entry.googleMapsLink}
-      dates={entry.dates}
-      text={entry.text}
+      {...entry}
     />
   ))
 
